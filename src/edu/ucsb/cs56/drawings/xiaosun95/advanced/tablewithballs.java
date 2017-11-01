@@ -12,11 +12,11 @@ import java.awt.geom.Ellipse2D;
 public class tablewithballs extends table implements Shape
 {
     /**                                                                         
-     * Constructor for objects of class CoffeeCup                               
+     * Constructor for objects of class table                              
      */
     public tablewithballs(double x, double y, double width, double height)
     {
-        // construct the basic house shell                                      
+        // construct the basic table shell                                      
         super(x,y,width,height);
 
         // get the GeneralPath that we are going to append stuff to             
@@ -35,11 +35,11 @@ public class tablewithballs extends table implements Shape
         
 
         Ellipse2D.Double ball1 =
-            new Ellipse2D.Double(x, y+height+ballheight,ballheight,ballwidth);
+            new Ellipse2D.Double(x, y-ballheight,ballheight,ballwidth);
         Ellipse2D.Double ball2 =
-            new Ellipse2D.Double(x+0.2*width, y+height+ballheight,ballheight,ballwidth);
+            new Ellipse2D.Double(x+0.2*width, y-ballheight,ballheight,ballwidth);
         Ellipse2D.Double ball3 =
-            new Ellipse2D.Double(x+0.6*width, y+height+ballheight,ballheight,ballwidth);
+            new Ellipse2D.Double(x+0.6*width,y-ballheight,ballheight,ballwidth);
 
         // add balls to table                  
         // Look up the meaning of the second parameter of append                

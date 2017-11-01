@@ -39,12 +39,12 @@ public class table extends GeneralPathWrapper implements Shape
         double footHeight = .75 * height;
 
         double footwidth=0.2*width;
-     double tableHeight = height - footHeight;
+     double tableHeight = 0.25* height;
     
 double firstfootleftxposition = x+0.2*width;
 double secondfootleftxposition = x+0.6*width;
-double tableleftyposition = y+footHeight+tableHeight;
-double footleftyposition=y+footHeight;
+double tableleftyposition = y;
+double footleftyposition=y+tableHeight;
 
         // Make the first story                                                 
 
@@ -57,7 +57,7 @@ double footleftyposition=y+footHeight;
                                    footwidth, footHeight);
 
  Rectangle2D.Double tableplat =
-            new Rectangle2D.Double(x, tableleftyposition ,
+            new Rectangle2D.Double(x, y,
                                    width, tableHeight);
 
 
