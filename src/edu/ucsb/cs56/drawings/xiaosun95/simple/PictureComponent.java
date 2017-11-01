@@ -89,6 +89,17 @@ public class PictureComponent extends JComponent
         g2.draw(snowManMiddleCircle);
 	
         // @@@ ADD CODE HERE TO DRAW THE TOP CIRCLE
+        Circle snowManTopCircle =
+            new Circle
+            (
+             snowManCenterBottomX,
+             snowManCenterBottomY - bottomRadius * 3 - topRadius,
+             topRadius
+             );
+        g2.draw(snowManTopCircle);
+
+
+	g2.drawString("xiao (charles) sun",20,20);
 
 
 
