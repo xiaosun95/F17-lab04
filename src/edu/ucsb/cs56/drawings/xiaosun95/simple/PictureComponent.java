@@ -14,7 +14,7 @@ import java.awt.geom.Rectangle2D;
    
    @author Phill Conrad (original drawing)
    @author Xiao(Charles)Sun (fixed the snowmans's head)
-   @version for UCSB CS56, W16
+   @version for UCSB CS56, F17
 */
 
 // Your class should "extend JComponent
@@ -99,7 +99,7 @@ public class PictureComponent extends JComponent
         g2.draw(snowManTopCircle);
 
 
-	g2.drawString("xiao (charles) sun",20,20);
+	g2.drawString("xiao (charles) sun",30,30);
 
 
 
